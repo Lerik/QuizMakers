@@ -7,3 +7,12 @@ C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb

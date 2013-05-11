@@ -10,7 +10,7 @@ namespace WindowsFormsApplication1
     {
         Fraccion A, B, res;
         char operador=' ';
-        void problema(Fraccion a, Fraccion b,char ope)
+        public Fraccion problema(Fraccion a, Fraccion b,char ope)
         {
             A = a;
             B = b;
@@ -30,6 +30,8 @@ namespace WindowsFormsApplication1
                     res = divi(a, b);
                     break;
             }
+
+            return res;
         }
 
         public static long gcf(long a, long b)

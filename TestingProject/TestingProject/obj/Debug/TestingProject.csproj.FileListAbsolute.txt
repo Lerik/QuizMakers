@@ -5,3 +5,10 @@ C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debu
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.csprojResolveAssemblyReference.cache
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.dll
 C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.pdb
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\TestingProject.dll
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\TestingProject.pdb
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.csprojResolveAssemblyReference.cache
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.dll
+C:\Users\Boston\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.pdb
