@@ -6,7 +6,7 @@
     <ProjectGuid>{7DFFD05F-B920-4232-BCCA-DB92558649CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestingProject</RootNamespace>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
     <AssemblyName>TestingProject</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
