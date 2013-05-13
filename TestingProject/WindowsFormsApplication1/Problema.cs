@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication1
+namespace Logica
 {
-    class Problema
+    public class Problema
     {
         Fraccion A, B, res;
         char operador=' ';
@@ -53,10 +53,16 @@ namespace WindowsFormsApplication1
 
         public static long lcd(long a, long b)
         {
-            return 0;
+            if (a == b)
+            {
+                return a;
+            }
+            long res = 0;
+
+            return res;
         }
 
-        static Fraccion simplificar(Fraccion f)
+        public static Fraccion simplificar(Fraccion f)
         {
             if (isZero(f))
             {
@@ -69,12 +75,12 @@ namespace WindowsFormsApplication1
             return f;
         }
 
-        static bool isZero(Fraccion f)
+        public static bool isZero(Fraccion f)
         {
             return f.num == 0;
         }
 
-        static bool sonIguales(Fraccion a, Fraccion b)
+        public static bool sonIguales(Fraccion a, Fraccion b)
         {
             if (isZero(a))
             {
@@ -88,37 +94,70 @@ namespace WindowsFormsApplication1
             }
             return a.den / b.den == a.num / b.num;
         }
-        static Fraccion suma(Fraccion a, Fraccion b)
+        public static Fraccion suma(Fraccion a, Fraccion b)
         {
             a = simplificar(a);
             b = simplificar(b);
             Fraccion respuesta = new Fraccion();
+            if (isZero(a))
+            {
+                return b;
+            }
+            if (isZero(b))
+            {
+                return a;
+            }
+            if (a.sig != b.sig)
+            {
+                b.sig = b.sig == signo.pos ? signo.neg : signo.pos;
+                return resta(a, b);
+            }
             respuesta.num = (a.num * b.den) + (b.num * a.den);
                 respuesta.den=a.den*b.den;
             return simplificar(respuesta);
         }
 
-        static Fraccion resta(Fraccion a, Fraccion b)
+        public static Fraccion resta(Fraccion a, Fraccion b)
         {
             a = simplificar(a);
             b = simplificar(b);
+            if (isZero(b))
+            {
+                return a;
+            }
+            if (isZero(a))
+            {
+                b.sig = b.sig == signo.pos ? signo.neg : signo.pos;
+                return b;
+            }
+            if (a.sig != b.sig)
+            {
+                b.sig = b.sig == signo.pos ? signo.neg : signo.pos;
+                return suma(a,b);
+            }
             Fraccion respuesta = new Fraccion();
             respuesta.num = (a.num * b.den) - (b.num * a.den);
+            if (respuesta.num < 0)
+            {
+                respuesta.num *= -1;
+                respuesta.sig = a.sig == signo.pos ? signo.neg : signo.pos;
+            }
             respuesta.den = a.den * b.den;
             return simplificar(respuesta);
         }
 
-        static Fraccion multi(Fraccion a, Fraccion b)
+        public static Fraccion multi(Fraccion a, Fraccion b)
         {
             var resultado = new Fraccion();
             a = simplificar(a);
             b = simplificar(b);
             resultado.den = a.den * b.den;
             resultado.den = a.num * b.num;
+            resultado.sig = a.sig == b.sig ? signo.pos : signo.neg;
             return simplificar(resultado);
         }
 
-        static Fraccion divi(Fraccion a, Fraccion b)
+        public static Fraccion divi(Fraccion a, Fraccion b)
         {
             if (isZero(b))
             {

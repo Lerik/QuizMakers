@@ -1,7 +1,0 @@
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\TestingProject.dll
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\TestingProject.pdb
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\WindowsFormsApplication1.exe
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\bin\Debug\WindowsFormsApplication1.pdb
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.csprojResolveAssemblyReference.cache
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.dll
-C:\Users\Juan\Documents\GitHub\QuizMakers\TestingProject\TestingProject\obj\Debug\TestingProject.pdb

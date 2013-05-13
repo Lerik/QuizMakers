@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication1
+namespace Logica
 {
     public enum signo
     {
         pos = 1,
         neg = -1
     } 
-    class Fraccion
+    public class Fraccion
     {
         public long num;
         public long den;
@@ -26,8 +26,8 @@ namespace WindowsFormsApplication1
             }
             bool equiv = Math.Sign(deno) == Math.Sign(nume);
             sig = equiv?signo.pos:signo.neg;
-            den = deno;
-            num = nume;
+            den = deno*Math.Sign(deno);
+            num = nume*Math.Sign(nume);
         }
 
         public Fraccion()
