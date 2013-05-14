@@ -18,7 +18,7 @@ namespace Logica
         public signo sig;
 
        
-        public Fraccion(long deno, long nume)
+        public Fraccion(long nume, long deno)
         {
             if (deno == 0)
             {

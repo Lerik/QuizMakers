@@ -114,6 +114,7 @@ namespace Logica
             }
             respuesta.num = (a.num * b.den) + (b.num * a.den);
                 respuesta.den=a.den*b.den;
+                respuesta.sig = a.sig;
             return simplificar(respuesta);
         }
 
@@ -152,7 +153,7 @@ namespace Logica
             a = simplificar(a);
             b = simplificar(b);
             resultado.den = a.den * b.den;
-            resultado.den = a.num * b.num;
+            resultado.num = a.num * b.num;
             resultado.sig = a.sig == b.sig ? signo.pos : signo.neg;
             return simplificar(resultado);
         }
