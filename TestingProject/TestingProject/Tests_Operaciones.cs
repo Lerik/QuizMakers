@@ -67,7 +67,7 @@ namespace WindowsFormsApplication2
         {
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(0, 7);
-            Assert.IsTrue(Problema.isZero(f));
+            Assert.IsTrue(Fraccion.isZero(f));
         }
 
         [TestMethod]
@@ -75,7 +75,7 @@ namespace WindowsFormsApplication2
         {
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(1, 7);
-            Assert.IsTrue(!Problema.isZero(f));
+            Assert.IsTrue(!Fraccion.isZero(f));
         }
 
         [TestMethod]
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(5, 7);
             Fraccion g = new Fraccion(5, 7);
-            Assert.IsTrue(Problema.sonIguales(f, g));
+            Assert.IsTrue(Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -97,7 +97,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(0, 7);
             Fraccion g = new Fraccion(0, 7);
-            Assert.IsTrue(Problema.sonIguales(f, g));
+            Assert.IsTrue(Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -108,7 +108,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(5, 7);
             Fraccion g = new Fraccion(10, 14);
-            Assert.IsTrue(Problema.sonIguales(f, g));
+            Assert.IsTrue(Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -119,7 +119,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(0, 9);
             Fraccion g = new Fraccion(0, 7);
-            Assert.IsTrue(Problema.sonIguales(f, g));
+            Assert.IsTrue(Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -130,7 +130,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(5, 7);
             Fraccion g = new Fraccion(6, 7);
-            Assert.IsTrue(!Problema.sonIguales(f, g));
+            Assert.IsTrue(!Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -141,7 +141,7 @@ namespace WindowsFormsApplication2
             Constructor_Parametros_Crea();
             Fraccion f = new Fraccion(0, 7);
             Fraccion g = new Fraccion(9, 7);
-            Assert.IsTrue(!Problema.sonIguales(f, g));
+            Assert.IsTrue(!Fraccion.sonIguales(f, g));
         }
 
         [TestMethod]
@@ -163,7 +163,7 @@ namespace WindowsFormsApplication2
             Fraccion lao = new Fraccion();
             try
             {
-                Problema.divi(lao, fe);
+                Fraccion.divi(lao, fe);
             }
             catch (Exception e)
             {
@@ -178,7 +178,7 @@ namespace WindowsFormsApplication2
             equals_todos();
             Fraccion f = new Fraccion(8, 4);
             Fraccion res = new Fraccion(2, 1);
-            f = Problema.simplificar(f);
+            f = Fraccion.simplificar(f);
             bool prueba = f.sig == res.sig && f.den == res.den && f.num == res.num;
             Assert.IsTrue(prueba);
         }
@@ -190,8 +190,8 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(4, 3);
             Fraccion g = new Fraccion(3, 4);
             Fraccion res = new Fraccion(1, 1);
-            Fraccion pre= Problema.multi(f, g);
-            Assert.IsTrue(Problema.sonIguales(res, pre));
+            Fraccion pre= Fraccion.multi(f, g);
+            Assert.IsTrue(Fraccion.sonIguales(res, pre));
         }
 
 
@@ -202,7 +202,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(4, 3);
             Fraccion g = new Fraccion(0, 4);
             Fraccion res = new Fraccion(0, 1);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.multi(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.multi(f, g)));
         }
 
         [TestMethod]
@@ -210,7 +210,7 @@ namespace WindowsFormsApplication2
         {
             equals_todos();
             Fraccion f = new Fraccion(0, 4);
-            f = Problema.simplificar(f);
+            f = Fraccion.simplificar(f);
             bool prueba = f.sig == signo.pos && f.den == 1 && f.num == 0;
             Assert.IsTrue(prueba);
         }
@@ -220,7 +220,7 @@ namespace WindowsFormsApplication2
         {
             equals_todos();
             Fraccion f = new Fraccion(0, -4);
-            f = Problema.simplificar(f);
+            f = Fraccion.simplificar(f);
             bool prueba = f.sig == signo.pos && f.den == 1 && f.num == 0;
             Assert.IsTrue(prueba);
         }
@@ -231,8 +231,8 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(-4, 3);
             Fraccion g = new Fraccion(3, 4);
             Fraccion res = new Fraccion(-1, 1);
-            Fraccion pre = Problema.multi(f, g);
-            Assert.IsTrue(Problema.sonIguales(res, pre));
+            Fraccion pre = Fraccion.multi(f, g);
+            Assert.IsTrue(Fraccion.sonIguales(res, pre));
         }
 
 
@@ -244,7 +244,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(4, 8);
             Fraccion g = new Fraccion(3, 8);
             Fraccion res = new Fraccion(7, 8);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         [TestMethod]
@@ -254,7 +254,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(2, 4);
             Fraccion g = new Fraccion(1, 2);
             Fraccion res = new Fraccion(9, 9);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         [TestMethod]
@@ -264,7 +264,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(4, 8);
             Fraccion g = new Fraccion(-3, 8);
             Fraccion res = new Fraccion(1, 8);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         [TestMethod]
@@ -274,7 +274,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(5, 4);
             Fraccion g = new Fraccion(-1, 2);
             Fraccion res = new Fraccion(3, 4);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         public void suma_misma_base_neg()
@@ -283,7 +283,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(-4, 8);
             Fraccion g = new Fraccion(-3, 8);
             Fraccion res = new Fraccion(-7, 8);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         [TestMethod]
@@ -293,7 +293,7 @@ namespace WindowsFormsApplication2
             Fraccion f = new Fraccion(-2, 4);
             Fraccion g = new Fraccion(1, -2);
             Fraccion res = new Fraccion(-9, 9);
-            Assert.IsTrue(Problema.sonIguales(res, Problema.suma(f, g)));
+            Assert.IsTrue(Fraccion.sonIguales(res, Fraccion.suma(f, g)));
         }
 
         [TestMethod]
@@ -303,8 +303,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(3, 5);
             Fraccion le = new Fraccion(6, 7);
             Fraccion res = new Fraccion(7, 10);
-            la = Problema.divi(la, le);
-            Assert.IsTrue(Problema.sonIguales(la,res));
+            la = Fraccion.divi(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la,res));
         }
 
         [TestMethod]
@@ -314,8 +314,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(3, -5);
             Fraccion le = new Fraccion(6, 7);
             Fraccion res = new Fraccion(-7, 10);
-            la = Problema.divi(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.divi(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -325,8 +325,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(0, 5);
             Fraccion le = new Fraccion(6, 7);
             Fraccion res = new Fraccion(0, 10);
-            la = Problema.divi(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.divi(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -336,8 +336,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(8, 5);
             Fraccion le = new Fraccion(6, 5);
             Fraccion res = new Fraccion(2, 5);
-            la = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -347,8 +347,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(-6, 5);
             Fraccion le = new Fraccion(-8, 5);
             Fraccion res = new Fraccion(2, 5);
-            la = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -358,8 +358,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(17, 5);
             Fraccion le = new Fraccion(-6, 5);
             Fraccion res = new Fraccion(23, 5);
-            la = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -369,8 +369,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(-17, 5);
             Fraccion le = new Fraccion(6, 5);
             Fraccion res = new Fraccion(-23, 5);
-            la = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
 
         [TestMethod]
@@ -380,8 +380,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(-17, 5);
             Fraccion le = new Fraccion(0, 5);
             
-            le = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, le));
+            le = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, le));
         }
 
         [TestMethod]
@@ -391,8 +391,8 @@ namespace WindowsFormsApplication2
             Fraccion la = new Fraccion(0, 5);
             Fraccion le = new Fraccion(6, 5);
             Fraccion res = new Fraccion(6, -5);
-            la = Problema.resta(la, le);
-            Assert.IsTrue(Problema.sonIguales(la, res));
+            la = Fraccion.resta(la, le);
+            Assert.IsTrue(Fraccion.sonIguales(la, res));
         }
     }
 }
