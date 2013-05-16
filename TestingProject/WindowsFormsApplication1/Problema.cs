@@ -6,31 +6,18 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
+
+    public enum dificultad{
+        easy, hard
+    }
+
     public class Problema
     {
-        Fraccion A, B, res;
+        Fraccion A, B;
+        Fraccion []opciones;
+        int correctIndex;
         char operador=' ';
-        void problema(Fraccion a, Fraccion b,char ope)
-        {
-            A = a;
-            B = b;
-            operador = ope;
-            switch (ope)
-            {
-                case '+':
-                    res = suma(a,b);
-                    break;
-                case '-':
-                    res = resta(a, b);
-                    break;
-                case '*':
-                    res = multi(a, b);
-                    break;
-                case '/':
-                    res = divi(a, b);
-                    break;
-            }
-        }
+        
 
         public static long gcf(long a, long b)
         {
@@ -168,6 +155,19 @@ namespace Logica
             b.den = b.num;
             b.num = c;
             return multi(a, b);
+        }
+
+        public Problema getProblema(dificultad dif)
+        {
+            Problema ret= new Problema();
+            long[] na = new long[4];
+            Random randy= new Random();
+            for (int y = 0; y < 4; y++)
+            {
+                na[y]= 
+            }
+
+            return ret;
         }
     }
 }
